@@ -1,0 +1,39 @@
+version: "2.0"
+
+stories:
+
+- story: say goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: bot challenge
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- story: movies long
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: monster
+  - action: utter_ask_rating
+  - intent: challenge_rating
+  - action: utter_getting_monster
+  - action: action_get_monster
+  - intent: thanks
+  - action: utter_welcome
+  - action: utter_goodbye
+
+- story: movies short
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: monster
+  - action: utter_ask_rating
+  - intent: challenge_rating
+  - action: utter_getting_monster
+  - action: action_get_monster
+  - intent: thanks
+  - action: utter_welcome
+  - action: utter_goodbye

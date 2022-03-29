@@ -1,0 +1,43 @@
+version: "2.0"
+
+intents:
+- greet
+- goodbye
+- bot_challenge
+- monster
+- challenge_rating
+- thanks
+
+entities:
+- rating
+slots:
+  rating:
+    type: text
+
+actions:
+- utter_greet
+- utter_goodbye
+- utter_iamabot
+- action_get_monster
+- utter_ask_rating
+- utter_getting_monster
+- utter_welcome
+
+responses:
+  utter_greet:
+  - text: Hey!
+  utter_goodbye:
+  - text: Bye
+  - text: Good Bye
+  utter_ask_rating:
+  - text: what Challenge Rating?
+  utter_getting_monster:
+  - text: Ok, recommeding a monster ...
+  utter_welcome:
+  - text: Welcome
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
