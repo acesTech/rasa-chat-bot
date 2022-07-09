@@ -1,67 +1,9 @@
-version: "2.0"
-
 nlu:
-- intent: greet
-  examples: |
-    - hey
-    - hello
-    - hi
-    - hello there
-    - good morning
-    - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
-
-- intent: goodbye
-  examples: |
-    - good afternoon
-    - cu
-    - good by
-    - cee you later
-    - good night
-    - bye
-    - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
-
-- intent: bot_challenge
-  examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
-
-- intent: monster
-  examples: |
-    - Would you like a random monster?
-
-- intent: challenge_rating
-  examples: |
-    - [0.125](rating)
-    - [0.25](rating)
-    - [0.5](rating)
-    - [1](rating)
-    - [2](rating)
-    - [3](rating)
-    - [4](rating)
-    - [5](rating)
-    - [6](rating)
-    - [7](rating)
-    - [8](rating)
-    - [9](rating)
-    - [10](rating)
-    - [11](rating)
-    - [12](rating)
-
-- intent: thanks
-  examples: |
-    - thanks
-    - thank you
-    - OK
+- intent: buy_weapon
+    - I would like to purchase a weapon?
+    - What weapon can I buy?
+    - Any weapon on sale?
+    - Can you recommend a weapon?
+    - Sell me a weapon.
+    - I want a weapon.
+    - I need a weapon.
